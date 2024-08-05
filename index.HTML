@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnito</title>
+    <style>
+        
+        body {
+            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header nav a {
+            color: rgb(0, 0, 0);
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #inicio { 
+            background: linear-gradient(to bottom, #1C53C9, #ffffff);
+            text-align: center;
+            padding: 50px 0;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+        }
+        #beneficios, #reseñas, #comoFunciona, #preguntasFrecuentes, #contacto {
+            padding: 20px 0;
+            text-align: center;
+        }
+        .targetas{
+            justify-content: space-around;
+            padding: 0 10px;
+            margin: 10px;
+            padding: 30px;
+            background-color: #ffffff;
+            border: 2px solid black;
+            border-radius: 1rem;
+            box-shadow: -10px 5px #c4b6b6 ;
+            max-width: 25%;
+            align-items: center;
+        }
+        .botonredondo{
+            background-color: yellow; border-radius: 1rem;
+        }
+        #reseñas, #preguntasFrecuentes{
+            background: linear-gradient(to bottom, #ffffff, #1C53C9);
+        }
+        #comoFunciona{
+            background: linear-gradient(to bottom,  #1C53C9,#ffffff);
+        }
+        .benefits div, .reviews div, .how-it-works div {
+            display: inline-block;
+            width: 30%;
+            padding: 10px;
+            margin: 1%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <img src="/imagenes/Logo-Turnito.png" alt="logoTurnito">
+        <a href="#">Inicio</a>
+        <a href="#">Beneficios</a>
+        <a href="#">Reseñas</a>
+        <a href="#">Contacto</a>
+        <button href="#" id="iniciosesion">Iniciar sesion</button> 
+    </nav>
+</header>
+
+<div class="container">
+    <section id="inicio" style="display: flex;">
+
+        <div>
+            <img src="/imagenes/Calentarioanimado.png" alt="calentarioanimado" id="calentarioanimado" >
+        </div>
+        <div>
+            <h1>¡Bienvenido a Turnito!</h1>
+            <p>Reserva tu turno de manera rápida y sencilla. Disfrutá de una experiencia sin esperas</p>
+            <button class="botonredondo">Registrarse</button>
+        </div>
+    </section>
+
+    <!-- Hay que haveriguar como poner un carrusel acá  -->
+    <section id="emprendedores">
+        <img src="/imagenes/logoPasteleria.png" alt="logoPasteleria">
+        <img src="imagenes/logoUñas.png" alt="logoUñas">
+        <img src="imagenes/logoBarber.png" alt="logoBarber">
+        <img src="imagenes/logoPeluq.png" alt="logoPeluq">
+        <img src="imagenes/logosSeven.png" alt="logosSeven">
+        <img src="imagenes/logoFrutas.png" alt="logoFrutas">
+
+    </section> 
+
+    <section id="beneficios">
+        <h2>BENEFICIOS</h2>
+        <div style="display: flex; ">
+                
+            <div  class="targetas">
+                <img src="/imagenes/logo-servicio24horas.png" alt="logo-servicio24horas">
+                <h3>Turnos Online 24/7</h3>
+                <p>Accede y registra tu turno en cualquier momento.</p>
+                
+            </div>
+            <div class="targetas">
+                <img src="/imagenes/logo-graficoSimple.png" alt="logo-graficoSimple">
+                <h3>Reducción del Absentismo</h3>
+                <p>Recibe recordatorios para no olvidar tus citas.</p>
+            </div>
+            <div class="targetas">
+                <img src="/imagenes/logo-graficoEnPantalla.png" alt="logo-graficoEnPantalla">
+                <h3>Administración Eficiente</h3>
+                <p>Gestiona tus citas de manera fácil y rápida.</p>
+            </div>
+            <div class="targetas">
+                <img src="/imagenes/logo-graficoCreciente.png" alt="logo-graficoCreciente">
+                <h3>Crecimiento</h3>
+                <p>Observa como tu emprendimiento mejora el rendimiento haciendo que crezca exponenciamente</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="reseñas">
+        <h2>RESEÑAS</h2>
+        <img src="imagenes/logo-reseñas.png" alt="logo-reseñas">
+        <div style="display: flex;">
+            <div class="targetas">
+                <img src="imagenes/logoPasteleria.png" alt="logoPasteleria">
+                <p>★★★★★</p>
+                <p>Excelente servicio, muy fácil de usar.</p>
+            </div>
+            <div class="targetas">
+                <img src="imagenes/logosSeven.png" alt="logosSeven">
+                <p>★★★★★</p>
+                <p>Muy útil para gestionar mis turnos.</p>
+            </div>
+            <div class="targetas">
+                <img src="imagenes/logoBarber.png" alt="logoBarber">
+                <p>★★★★★</p>
+                <p>Recomiendo totalmente esta aplicación.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="comoFunciona">
+        <h2>¿Cómo Funciona Turnito?</h2>
+        <div style="display: flex;">
+            <div class="targetas" style="background-color:transparent;">
+                <button class="botonredondo">1</button>
+                <h3>Busca</h3>
+                <p>Encuentra el servicio que necesitas y selecciona una fecha y hora.</p>
+                <img src="imagenes/logo-agenda.png" alt="logo-agenda">
+            </div>
+            <div class="targetas" style="background-color:transparent;" >
+                <img src="imagenes/logo-reserva.png" alt="logo-reserva">
+                <h3>Reserva el turno</h3>
+                <button class="botonredondo">2</button>
+                <p>Completa tus datos y confirma tu reserva.</p>
+            </div>
+            <div class="targetas" style="background-color:transparent;" >
+                <button class="botonredondo">3</button>
+                <h3>¡Listo!</h3>
+                <p>Recibe confirmación y un recordatorio antes del turno.</p>
+                <img src="imagenes/logo-check.png"  alt="logo-check">
+            </div>
+        </div>
+        <button class="botonredondo">Reseva ahora</button>
+    </section>
+
+    <section id="preguntasFrecuentes">
+        <h2>PREGUNTAS FRECUENTES</h2>
+        <div>
+            <h3>¿Puedo cambiar mi turno una vez reservado?</h3>
+            <p>Sí, puedes modificar tu reserva en cualquier momento.</p>
+        </div>
+        <div>
+            <h3>¿Qué pasa si olvido mi turno?</h3>
+            <p>Recibirás un recordatorio antes de tu cita.</p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form style="display: flex;">
+            <div style="justify-content: space-around;
+            padding: 0 10px;
+            margin: 10px;">
+                <label for="name">Nombre y Apellido:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="phone">Teléfono:</label><br>
+                <input type="tel" id="phone" name="phone"><br>
+            </div>
+            <div style="justify-content: space-around;
+            padding: 0 10px;
+            margin: 10px;">
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <button class="botonredondo" type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Turnito. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
